@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base target="_top">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="https://citizensadvice.github.io/ca-designsystem/docs/1.0/assets/dist/css/cabui.css">
+  <title>Link Changer</title>
+</head>
+
+<body>
+  <style>
+    .top-bar {
+    height: 8px;
+    width: 100%;
+    background-color: #004B88;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    margin-top: 8px;
+  }
+
+  h3 {
+    margin-top: 0px;
+  }
+  
+  .c-btn-container {
+    margin-bottom: 20px;
+  }
+</style>
+
+  <div class="top-bar"></div>
+  <div class="c-wrap">
+    <div class="o-grid">
+      <div class="o-grid__unit">
+        <h2>Link changer</h2>
+        <p>This tool replaces all your Citizens Advice links with "edit." versions.</p>
+        <p>This means you can copy and paste your links without having to add them again in EPi.</p>
+        <div class="c-btn-container">
+          <button type="button" class="c-btn c-btn--primary" onclick="javascript:Fix();">
+            Fix me
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function Fix() {
+        google.script.run.resultsRun();
+      }
+
+    </script>
+</body>
+
+</html>
